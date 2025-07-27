@@ -2,6 +2,11 @@
 
 ## Disclaimer: this is an experiment in development. Results can be various, including uncontrollable harmful behaviour and other unwanted activity. Be careful with running this code and giving an access to important systems. For preventing any possible risks, run this code only in isolated and controllable environment. You are solely responsible for the consequences of running this code. 
 
+### About
+
+IEA = Independent Economic Activity 
+
+This project is attempt to prove that it's possible to create LLM agent able to be economically independent, including able to expand own abilities and scale.
 
 ### Starter-pack possibilities
 
