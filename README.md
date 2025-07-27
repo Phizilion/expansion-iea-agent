@@ -8,7 +8,7 @@ IEA = Independent Economic Activity
 
 This project is attempt to prove that it's possible to create LLM agent able to be economically independent, including able to expand own abilities and scale.
 
-### Starter-pack possibilities
+### Starter-pack abilities
 
 #### Targeting
 Main cycle
