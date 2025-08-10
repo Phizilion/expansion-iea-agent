@@ -24,7 +24,7 @@ except Exception:  # pragma: no cover - provide minimal stand-in
         page_content: str
         metadata: dict | None = None
 
-from ..config import SETTINGS
+from config import SETTINGS
 
 # Optional imports: pgvector / chroma / embeddings ---------------------------
 try:  # pragma: no cover - optional dependency

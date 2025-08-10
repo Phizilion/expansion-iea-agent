@@ -11,9 +11,10 @@ services:
       - ./data:/app/data
     command: >
       bash -lc "
-      python -m playwright install --with-deps &&
-      pytest -q || true &&
-      python -m iea.cli
+            pytest -q || true &&
+      cd src/iea &&
+      pwd &&
+      python -m cli
       "
     depends_on:
       - pgvector

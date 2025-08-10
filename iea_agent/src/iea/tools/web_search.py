@@ -3,7 +3,7 @@ from typing import List
 
 from ._tool import tool
 
-from ..config import SETTINGS
+from config import SETTINGS
 
 try:  # pragma: no cover - tested via absence
     from langchain_tavily import TavilySearchResults  # type: ignore

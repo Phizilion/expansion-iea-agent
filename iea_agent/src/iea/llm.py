@@ -1,6 +1,6 @@
 from __future__ import annotations
 from langchain_openai import ChatOpenAI
-from .config import SETTINGS
+from config import SETTINGS
 
 def make_llm(purpose: str = "default") -> ChatOpenAI:
     """
