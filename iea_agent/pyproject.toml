@@ -1,0 +1,51 @@
+[project]
+name = "iea-poc"
+version = "0.2.0"
+description = "IEA (Independent Economic Activity) Agent: Targeting, Info Exploration, Self-Modification (LangGraph + LangChain + GPT-5)"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+  "pydantic>=2.7.0",
+  "python-dotenv>=1.0.1",
+  "typer>=0.12.3",
+  "rich>=13.7.1",
+
+  "langchain>=0.2.14",
+  "langgraph>=0.2.36",
+  "langchain-openai>=0.1.20",
+
+  # Vector stores
+  "langchain-postgres>=0.0.12",
+  "psycopg2-binary>=2.9.9",
+  "chromadb>=0.5.5",
+
+  # Search + Browser
+  "tavily-python>=0.3.7",
+  "langchain-tavily>=0.0.6",
+  "playwright>=1.46.0",
+
+  # Dev/Test
+  "gitpython>=3.1.44",
+  "pytest>=8.3.2",
+  "pytest-asyncio>=0.23.8",
+  "tenacity>=8.5.0",
+  "httpx>=0.27.2",
+  "jinja2>=3.1.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.5.7",
+  "mypy>=1.11.1",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E","F","I","UP","Q","W","B","C90"]
+ignore = ["E501"]  # allow long lines when needed
+
+[tool.pytest.ini_options]
+addopts = "-q -k 'not e2e'"
+pythonpath = ["src"]
