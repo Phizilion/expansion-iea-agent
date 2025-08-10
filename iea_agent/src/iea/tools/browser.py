@@ -1,5 +1,5 @@
 from __future__ import annotations
-from langchain_core.tools import tool
+from ._tool import tool
 
 """
 Simple Playwright-based page fetcher. This is *not* a crawler: it visits a single URL,

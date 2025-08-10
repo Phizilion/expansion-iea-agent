@@ -1,5 +1,5 @@
 from __future__ import annotations
-from langchain_core.tools import tool
+from ._tool import tool
 import re
 
 @tool("extract_text", return_direct=False)

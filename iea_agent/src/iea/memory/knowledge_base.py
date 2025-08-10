@@ -1,6 +1,11 @@
 from __future__ import annotations
 from typing import Optional, Iterable
-from langchain_core.documents import Document
+
+try:  # pragma: no cover - dependency may be absent
+    from langchain_core.documents import Document  # type: ignore
+except Exception:  # pragma: no cover
+    from .vectorstore import Document  # type: ignore
+
 from .vectorstore import get_vectorstore
 
 def upsert_knowledge(text: str, metadata: Optional[dict] = None, collection="iea_memory") -> None:
